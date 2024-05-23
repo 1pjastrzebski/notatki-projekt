@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj notatke</title>
+    <link rel="stylesheet" href="notatki.css">
+    <script src="notatki.js" defer></script>
+</head>
+<body>
+    <header>
+        <b>Notatki</b>
+        <a href="notatki.html" class="backArrow"><img src="undo.svg" alt="backArrow"></a>
+    </header>
+    <main>
+        <form action="#">
+            <label for="title"></label>
+            <input type="text" name="title" id="title" required placeholder="tytuł">
+            <label for="subject"></label>
+            <input type="text" name="subject" id="subject" placeholder="przedmiot" required>
+            <label for="description"></label>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="opis" required></textarea>
+            <button type="submit" class="addBtn"><img src="undo-1.svg" alt=""></button>
+        </form>
+    </main>
+</body>
+</html>

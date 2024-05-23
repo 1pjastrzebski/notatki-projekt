@@ -8,14 +8,21 @@
 header{
     display: flex;
     justify-content: space-between;
-    padding: 5%;
+    padding: 8%;
     margin-bottom: 15%
 }
 header > b{
     color: #012676;
     font-size: 24px;
 }
-form{
+main{
+    display: flex;
+    flex-direction: column;
+}
+.articles{
+    height: 450px;
+}
+form,article{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -25,6 +32,7 @@ form{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
 }
+
 input,textarea{
     background-color: #D4D4D8;
     border: none;
@@ -34,5 +42,26 @@ input,textarea{
 }
 input::placeholder,textarea::placeholder{
     color: white;
+    font-weight: 700;
     
+}
+.addBtn{
+    display: flex;
+    height: 30px;
+    width: 30px;
+    border: none;
+    align-self: center;
+    margin-top: 3%;
+    
+}
+img{
+    height: 31px;
+    width: 31px;
+}
+.form-error-text{
+    color: tomato;
+    justify-self: center;
+}
+.field-error{
+    border:solid 3px tomato;
 }
