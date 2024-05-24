@@ -20,7 +20,9 @@ main{
     flex-direction: column;
 }
 .articles{
-    height: 450px;
+    height: 500px;
+    overflow-y: scroll;
+    padding: 3px 0px;
 }
 form,article{
     display: flex;
@@ -28,11 +30,11 @@ form,article{
     justify-content: space-around;
     width: 80%;
     margin: auto;
+    margin-bottom: 20px;
     padding: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
 }
-
 input,textarea{
     background-color: #D4D4D8;
     border: none;
@@ -43,6 +45,7 @@ input,textarea{
 input::placeholder,textarea::placeholder{
     color: white;
     font-weight: 700;
+    font-size: 16px
     
 }
 .addBtn{
