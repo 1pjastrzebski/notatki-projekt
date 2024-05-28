@@ -68,3 +68,13 @@ img{
 .field-error{
     border:solid 3px tomato;
 }
+.bigNote{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+}
+.note{
+    display: block;
+}
