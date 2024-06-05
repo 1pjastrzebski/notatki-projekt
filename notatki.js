@@ -39,7 +39,6 @@ function getFieldError(el) {
     fields.push(field)
   })
   fields.push(textarea)
-  
   form.setAttribute("novalidate", true);
   
   for (const el of fields) {

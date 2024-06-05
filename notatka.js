@@ -4,7 +4,7 @@ const addBtn = document.querySelector(".addBtn")
 notes.forEach((note)=>{
     note.addEventListener('click',()=>{
         if(note.classList.contains("note")){
-            note.classList.replace("note","bigNote") 
+            note.classList.replace("note","bigNote")
             notes.forEach((note)=>{
                 if(note.classList.contains("note")){
                     note.style.display = "none";
@@ -12,17 +12,18 @@ notes.forEach((note)=>{
             })
             addBtn.style.display = "none";
             setTimeout(()=>{
-                main.addEventListener("click",mainFunc)
-                function mainFunc(){
+                main.addEventListener("click",Func)
+                function Func(){
                     notes.forEach((note)=>{
                         
                         note.style.display = "block"
                         if(note.classList.contains("bigNote")){
                             note.classList.replace("bigNote","note")
+
                         }
                         addBtn.style.display = "block"
                     })
-                    main.removeEventListener("click",mainFunc)
+                    main.removeEventListener("click",Func)
                 }
             },1)
         }
