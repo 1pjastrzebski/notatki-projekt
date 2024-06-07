@@ -30,8 +30,7 @@ function getFieldError(el) {
       field.insertAdjacentElement("afterend", div);
     }
   }
-  
-  const form = document.querySelector("form");
+  import form from "notatka.js"
   const inputs = document.querySelectorAll("input");
   const textarea = document.querySelector("textarea")
   let fields = [];

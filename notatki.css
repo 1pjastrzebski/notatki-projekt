@@ -46,13 +46,15 @@ article {
 }
 .bigNote {
   position: absolute;
-  top: 45%;
+  max-height: 700px;
+  top: 55%; 
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   margin: 0;
   word-wrap: break-word;
   width: 90%;
+  overflow-y: scroll;
 }
 input,
 textarea {
@@ -109,8 +111,11 @@ img {
     .note{
         font-size: 22px;
     }
+    .note > p{
+      padding-bottom: 5%;
+    }
     header{
-        margin-bottom: 8%;
+        margin-bottom: 5%;
         padding: 4%;
     }
     header > b {
@@ -144,11 +149,7 @@ img {
         font-size: 18px;
     }
     main > .addBtn{
-        display: none;
+        display: none !important;
     }
-    .bigNote{
-        display: flex;
-        position: unset;
-        width: 60%;
-    }
+    
 }

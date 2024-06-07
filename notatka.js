@@ -1,6 +1,9 @@
 const notes = document.querySelectorAll(".note")
 const main = document.querySelector(".container")
-const addBtn = document.querySelector(".addBtn")
+const addBtn = document.querySelector("#addFormBtn")
+export const form = document.querySelector("form")
+
+let x = window.matchMedia("(min-width: 1350px)")
 notes.forEach((note)=>{
     note.addEventListener('click',()=>{
         if(note.classList.contains("note")){
@@ -10,7 +13,11 @@ notes.forEach((note)=>{
                     note.style.display = "none";
                 }
             })
-            addBtn.style.display = "none";
+            if(x.matches){
+                form.style.display = "none";
+            }else{
+                addBtn.style.display = "none";
+            }
             setTimeout(()=>{
                 main.addEventListener("click",Func)
                 function Func(){
@@ -21,7 +28,11 @@ notes.forEach((note)=>{
                             note.classList.replace("bigNote","note")
 
                         }
-                        addBtn.style.display = "block"
+                        if(!x.matches){
+                            addBtn.style.display = "block"
+                        }else{
+                            form.style.display = "flex"
+                        }
                     })
                     main.removeEventListener("click",Func)
                 }
