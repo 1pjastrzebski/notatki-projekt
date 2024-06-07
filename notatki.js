@@ -30,7 +30,7 @@ function getFieldError(el) {
       field.insertAdjacentElement("afterend", div);
     }
   }
-  import form from "notatka.js"
+  const forms = document.querySelector("form")
   const inputs = document.querySelectorAll("input");
   const textarea = document.querySelector("textarea")
   let fields = [];
@@ -38,7 +38,7 @@ function getFieldError(el) {
     fields.push(field)
   })
   fields.push(textarea)
-  form.setAttribute("novalidate", true);
+  forms.setAttribute("novalidate", true);
   
   for (const el of fields) {
     el.addEventListener("click", (e) => {
@@ -46,7 +46,7 @@ function getFieldError(el) {
       el.classList.remove("field-error")
     });
   }
-  form.addEventListener("submit", (e) => {
+  forms.addEventListener("submit", (e) => {
     e.preventDefault();
   
     let formHasErrors = false;

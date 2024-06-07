@@ -1,7 +1,7 @@
 const notes = document.querySelectorAll(".note")
 const main = document.querySelector(".container")
 const addBtn = document.querySelector("#addFormBtn")
-export const form = document.querySelector("form")
+const form = document.querySelector("form")
 
 let x = window.matchMedia("(min-width: 1350px)")
 notes.forEach((note)=>{
