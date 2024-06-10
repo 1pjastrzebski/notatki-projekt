@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 header {
   display: flex;
   justify-content: space-between;
@@ -39,11 +39,12 @@ article {
 .note {
   max-height: 300px;
   display: block;
+  font-size: 18px;
   
 }
-.note > p {
-  overflow-y: hidden;
-  text-overflow: "...";
+.note > p{
+  max-height: 220px;
+  overflow: hidden;
 }
 .bigNote {
   position: absolute;
@@ -99,6 +100,10 @@ img {
     .note{
         font-size: 20px;
     }
+    .note > p{
+      max-height: 187px;
+      overflow: hidden;
+    }
     header{
         margin-bottom: 12%;
     }
@@ -116,6 +121,7 @@ img {
     }
     .note > p{
       padding-bottom: 5%;
+      max-height: 183px;
     }
     header{
         margin-bottom: 5%;
@@ -136,9 +142,18 @@ img {
     .articles{
         flex-basis: 70%;
     }
+    .note > p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
     .formDiv{
         flex-basis: 30%;
         padding-left:5%;
+    }
+    .formDiv > h1{
+        text-align: center;
+        margin-bottom: 5%;
     }
     form{
         width: 100%;
@@ -153,5 +168,6 @@ img {
     main > .addBtn{
         display: none !important;
     }
+
     
 }

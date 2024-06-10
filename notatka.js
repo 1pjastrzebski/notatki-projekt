@@ -1,7 +1,7 @@
 const notes = document.querySelectorAll(".note")
 const main = document.querySelector(".container")
 const addBtn = document.querySelector("#addFormBtn")
-const form = document.querySelector("form")
+const form = document.querySelector(".formDiv")
 
 let x = window.matchMedia("(min-width: 1350px)")
 notes.forEach((note)=>{
@@ -31,7 +31,7 @@ notes.forEach((note)=>{
                         if(!x.matches){
                             addBtn.style.display = "block"
                         }else{
-                            form.style.display = "flex"
+                            form.style.display = "block"
                         }
                     })
                     main.removeEventListener("click",Func)
