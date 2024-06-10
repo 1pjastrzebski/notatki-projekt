@@ -96,6 +96,28 @@ img {
 .formDiv{
     display: none;
 }
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 4px solid #E4E4E7;
+  background-color: white;
+}
+
+a{
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+footer>a>img{
+  width: 50%;
+}
 @media (min-width: 700px){
     .note{
         font-size: 20px;
@@ -130,6 +152,17 @@ img {
     header > b {
         font-size: 35px;
     }
+    footer>a>img{
+      width: 30%;
+  }
+
+  footer{
+      justify-content: center;
+  }
+
+  a{
+      flex-basis: 10%;
+  }
 }
 @media (min-width: 1350px){
     .formDiv{
